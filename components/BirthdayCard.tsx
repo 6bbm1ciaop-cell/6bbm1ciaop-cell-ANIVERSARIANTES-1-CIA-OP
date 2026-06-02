@@ -1,5 +1,6 @@
 import React from 'react';
 import { Military } from '../types';
+import { LOGO_CBMMG, LOGO_6BBM } from '../types-logos';
 
 interface BirthdayCardProps {
   soldier?: Military;
@@ -94,9 +95,6 @@ const BirthdayCard: React.FC<BirthdayCardProps> = ({
   };
 
   const styles = getScaleClasses();
-
-  const LOGO_6BBM = "/logo-6bbm.png";
-  const LOGO_CBMMG = "/logo-cbmmg.png";
 
   return (
     // FIX: Fixed dimensions (595x842px) are crucial for html2canvas consistency

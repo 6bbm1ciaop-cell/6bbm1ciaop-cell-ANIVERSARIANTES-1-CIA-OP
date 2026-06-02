@@ -1,6 +1,7 @@
 import React from 'react';
 import { LayoutDashboard, Users, CreditCard } from 'lucide-react';
 import { ViewMode } from '../types';
+import { LOGO_CBMMG } from '../types-logos';
 
 interface SidebarProps {
   currentView: ViewMode;
@@ -18,7 +19,7 @@ const Sidebar: React.FC<SidebarProps> = ({ currentView, onChangeView }) => {
     <aside className="w-64 bg-cbmmg-red text-white flex flex-col shadow-2xl z-20 h-screen fixed left-0 top-0">
       <div className="p-6 flex items-center gap-3 border-b border-red-800 bg-red-800">
         <img 
-            src="/logo-cbmmg.png" 
+            src={LOGO_CBMMG} 
             alt="Brasão CBMMG" 
             className="w-12 h-12 drop-shadow-md"
         />
